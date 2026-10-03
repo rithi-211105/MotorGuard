@@ -6,7 +6,7 @@ set -e
 cd "$(dirname "$0")"
 
 echo "============================================"
-echo "  AI Infrastructure Monitor"
+echo "  MotorGuard AI - Predictive Maintenance"
 echo "============================================"
 
 # Check Python
@@ -31,9 +31,9 @@ echo "Dependencies OK."
 
 # Start unified backend & frontend server
 echo ""
-echo "[2/2] Starting unified FastAPI server..."
-echo "       Command Center: http://localhost:8000"
-echo "       API Docs:       http://localhost:8000/docs"
+echo "[2/2] Starting unified server on http://localhost:8000 ..."
+echo "       Dashboard & Control Room: http://localhost:8000"
+echo "       Interactive Swagger Docs: http://localhost:8000/docs"
 echo ""
 
 $PYTHON_CMD -m uvicorn backend.main:app --host 0.0.0.0 --port 8000 --reload

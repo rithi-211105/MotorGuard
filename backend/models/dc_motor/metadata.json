@@ -1,0 +1,73 @@
+{
+  "model_type": "RandomForestClassifier",
+  "target_name": "health_label",
+  "n_classes": 4,
+  "classes": [
+    "Loose Foundation",
+    "Normal Operation",
+    "Suboptimal Control (Speed Reg)",
+    "Suboptimal Control (Speed+Current Reg)"
+  ],
+  "grouped_cv_accuracy": 0.8673469387755102,
+  "grouped_cv_macro_f1": 0.8607171761762866,
+  "feature_importance": [
+    {
+      "feature": "curr_fft_mean",
+      "importance": 0.26067051995152185
+    },
+    {
+      "feature": "curr_fft_peak",
+      "importance": 0.18719045940466464
+    },
+    {
+      "feature": "curr_mean",
+      "importance": 0.1592002143570377
+    },
+    {
+      "feature": "curr_crest_factor",
+      "importance": 0.1496426617656179
+    },
+    {
+      "feature": "curr_rms",
+      "importance": 0.1347136962015101
+    },
+    {
+      "feature": "curr_std",
+      "importance": 0.06765833058962227
+    },
+    {
+      "feature": "curr_peak",
+      "importance": 0.021997259237986854
+    },
+    {
+      "feature": "curr_p2p",
+      "importance": 0.018926858492038748
+    }
+  ],
+  "confusion_matrix": [
+    [
+      20,
+      0,
+      5,
+      1
+    ],
+    [
+      1,
+      25,
+      0,
+      0
+    ],
+    [
+      5,
+      0,
+      15,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      25
+    ]
+  ]
+}

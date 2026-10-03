@@ -1,0 +1,21 @@
+{
+  "profile_name": "dc_motor_12v",
+  "feature_subset": "ESP32_Electrical_Only",
+  "feature_names": [
+    "curr_mean",
+    "curr_rms",
+    "curr_std",
+    "curr_peak",
+    "curr_p2p",
+    "curr_crest_factor",
+    "curr_fft_peak",
+    "curr_fft_mean"
+  ],
+  "esp32_compatible": true,
+  "class_labels": [
+    "Loose Foundation",
+    "Normal Operation",
+    "Suboptimal Control (Speed Reg)",
+    "Suboptimal Control (Speed+Current Reg)"
+  ]
+}

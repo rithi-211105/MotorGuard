@@ -1,0 +1,21 @@
+{
+  "name": "motorguard-ai",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "MotorGuard AI - Industrial Rotating Machinery Health & Edge-Assisted Predictive Anomaly Detection Platform",
+  "author": "rithi-211105",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "backend": "python -m uvicorn backend.main:app --host 0.0.0.0 --port 8000"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^6.1.1",
+    "chart.js": "^4.5.1",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "vite": "^8.2.2"
+  }
+}

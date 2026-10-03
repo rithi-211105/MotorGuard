@@ -1,0 +1,226 @@
+{
+  "dataset_filename": "feature_time_48k_2048_load_1.csv",
+  "total_samples": 2300,
+  "train_samples": 1840,
+  "test_samples": 460,
+  "random_seed": 42,
+  "feature_columns": [
+    "rms",
+    "sd",
+    "kurtosis",
+    "crest",
+    "max",
+    "min",
+    "skewness"
+  ],
+  "target_column": "fault",
+  "class_names": [
+    "Ball_007_1",
+    "Ball_014_1",
+    "Ball_021_1",
+    "IR_007_1",
+    "IR_014_1",
+    "IR_021_1",
+    "Normal_1",
+    "OR_007_6_1",
+    "OR_014_6_1",
+    "OR_021_6_1"
+  ],
+  "best_model": "Lightweight Neural Net (MLP)",
+  "model_version": "v2.0-cwru-standardized",
+  "training_timestamp": "2026-08-30T13:49:03.741051",
+  "accuracy": 0.8739130434782608,
+  "precision_macro": 0.8767074580094931,
+  "recall_macro": 0.8739130434782609,
+  "f1_score_macro": 0.8729627147410296,
+  "training_time_ms": 3338.0801677703857,
+  "inference_time_ms_per_sample": 0.0,
+  "model_size_bytes": 47328,
+  "model_size_kb": 46.22,
+  "per_class_metrics": {
+    "Ball_007_1": {
+      "precision": 0.5740740740740741,
+      "recall": 0.6739130434782609,
+      "f1_score": 0.62,
+      "support": 46
+    },
+    "Ball_014_1": {
+      "precision": 1.0,
+      "recall": 0.8478260869565217,
+      "f1_score": 0.9176470588235294,
+      "support": 46
+    },
+    "Ball_021_1": {
+      "precision": 0.7391304347826086,
+      "recall": 0.7391304347826086,
+      "f1_score": 0.7391304347826086,
+      "support": 46
+    },
+    "IR_007_1": {
+      "precision": 0.9583333333333334,
+      "recall": 1.0,
+      "f1_score": 0.9787234042553191,
+      "support": 46
+    },
+    "IR_014_1": {
+      "precision": 0.8653846153846154,
+      "recall": 0.9782608695652174,
+      "f1_score": 0.9183673469387755,
+      "support": 46
+    },
+    "IR_021_1": {
+      "precision": 0.9574468085106383,
+      "recall": 0.9782608695652174,
+      "f1_score": 0.967741935483871,
+      "support": 46
+    },
+    "Normal_1": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 46
+    },
+    "OR_007_6_1": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 46
+    },
+    "OR_014_6_1": {
+      "precision": 0.6944444444444444,
+      "recall": 0.5434782608695652,
+      "f1_score": 0.6097560975609756,
+      "support": 46
+    },
+    "OR_021_6_1": {
+      "precision": 0.9782608695652174,
+      "recall": 0.9782608695652174,
+      "f1_score": 0.9782608695652174,
+      "support": 46
+    }
+  },
+  "confusion_matrix": [
+    [
+      31,
+      0,
+      7,
+      0,
+      0,
+      0,
+      0,
+      0,
+      8,
+      0
+    ],
+    [
+      0,
+      39,
+      1,
+      1,
+      2,
+      0,
+      0,
+      0,
+      3,
+      0
+    ],
+    [
+      4,
+      0,
+      34,
+      0,
+      5,
+      2,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      46,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      45,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0,
+      45,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      46,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      46,
+      0,
+      0
+    ],
+    [
+      19,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      25,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      45
+    ]
+  ],
+  "saved_model_file": "backend/models/motor_best_model.joblib",
+  "saved_scaler_file": "backend/models/motor_scaler.joblib"
+}
